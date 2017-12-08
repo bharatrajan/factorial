@@ -2,17 +2,17 @@
  * @description - Check if n is integer
  * @utility
  * @param {integer} n - value to be validated for integer
- * @returns boolean : interger or not
+ * @returns {boolean} : interger or not
  */
 var isNInteger = function(n) {
-    return (n === parseInt(n))
+    return (!isNaN(n) && n === parseInt(n))
 }
 
 /**
  * @description - Computes factorial for integer n
  * @utility
  * @param {integer} n - n for which factorial is calculated
- * @returns string : Factorial of n. Or error message
+ * @returns {string} : Factorial of n. Or error message
  */
 var getFactorial = (function() {
     //Closure to safeguard cacheArr
