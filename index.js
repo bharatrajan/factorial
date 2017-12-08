@@ -6,7 +6,7 @@
  * @returns {boolean} - interger or not
  */
 var isNInteger = function(n) {
-    return (!isNaN(n) && n === parseInt(n))
+    return (!isNaN(n) && n === parseInt(n) && !(n < 0))
 }
 
 /**
